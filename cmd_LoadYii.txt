@@ -1,0 +1,5 @@
+C:\Web\php5\php.exe E:\MyPHP\workspace\framework\yiic webapp E:\MyPHP\workspace\kleo_example
+
+C:\Web\php5\php.exe E:\MyPHP\workspace\SaaS\framework\yiic webapp E:\MyPHP\workspace\YiiDemo
+
+E:\inetpub\www\xampp\php\php.exe E:\MyPHP\workspace\framework\yiic webapp E:\MyPHP\workspace\MyERP
