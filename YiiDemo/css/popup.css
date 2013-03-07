@@ -1,0 +1,573 @@
+/* CSS Document */
+#mask
+{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index:998;
+    background-color:#666666;
+    display:none;
+}
+
+#boxes .window {
+    position:absolute;
+    width:440px;
+    display:none;
+    z-index:9999;
+    padding:1px;
+    /*background:#000000;*/
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#boxes #confirmation {
+    width:375px;
+    /*background:#09C;
+    background: url(../images/popup_bg.png);*/
+    border-radius:5px;
+    background:#fff;
+}
+
+#boxes #confirmation .header
+{
+    padding:10px;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+}
+
+#boxes #confirmation .content
+{
+    background:#FFF;
+    padding:15px 10px 15px 10px;
+    min-height:50px;
+    text-align:center;
+    color:#333;
+}
+
+#boxes #confirmation .footer
+{
+    padding:8px;
+    color:#ffffff;
+    background:#eeeeee;
+    border-top:1px solid #dddddd;
+}
+
+#boxes #confirmation .footer a.input
+{
+    padding:3px 10px;
+    color:#FFF;
+    border-radius:3px;
+    float:right;
+    margin-right:5px;
+    display:block;
+    cursor:pointer;
+    font-size:11px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/***** box1 *****/
+#box1 .window {
+    position:absolute;
+    width:440px;
+    display:none;
+    z-index:9999;
+    padding:1px;
+    /*background:#000000;*/
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#box1 #alertInfo {
+    width:375px;
+    /*background:#09C;
+    background: url(../images/popup_bg.png);*/
+    border-radius:5px;
+    background:#fff;
+}
+
+#box1 #alertInfo .header
+{
+    padding:10px;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+}
+
+#box1 #alertInfo .content
+{
+    background:#FFF;
+    padding:15px 10px 15px 10px;
+    min-height:50px;
+    text-align:center;
+    color:#333;
+}
+
+#box1 #alertInfo .footer
+{
+    padding:8px;
+    color:#ffffff;
+    background:#eeeeee;
+    border-top:1px solid #dddddd;
+}
+
+#box1 #alertInfo .footer a.input
+{
+    padding:3px 10px;
+    color:#FFF;
+    border-radius:3px;
+    float:right;
+    margin-right:5px;
+    display:block;
+    cursor:pointer;
+    font-size:11px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/***** box1 *****/
+
+/***** box2 *****/
+#box2 .window {
+    position:absolute;
+    width:440px;
+    display:none;
+    z-index:9999;
+    padding:1px;
+	font-size:14px;
+    /*background:#000000;*/
+}
+/* Customize your modal window here, you can add background image too */
+#box2 #alertInfo {
+    width:655px;
+    /*background:#09C;
+    background: url(../images/popup_bg.png);*/
+    border-radius:5px;
+    background:#fff;
+}
+
+#box2 #alertInfo .header
+{
+    padding:10px;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+}
+
+#box2 #alertInfo .content
+{
+    background:#FFF;
+    padding:10px 10px 10px 10px;
+    min-height:250px;
+/*    text-align:center;*/
+    color:#333;
+}
+
+#box2 #alertInfo .contenttext
+{
+    font-size:12px; 
+	color:#000000; 
+/*	font-family:Arial,Verdana,MS Sans Serif; */
+	background-color:#FFFFFF; 
+	padding:5px 15px 5px 15px; 
+	border:1px solid #A0A0A0; 
+	width:600px; 
+	height:256px; 
+	overflow:auto;
+}
+
+#box2 #alertInfo .footer
+{
+    padding: 0 8px 8px 8px;
+    color:#ffffff;
+    /*background:#eeeeee;
+    border-top:1px solid #dddddd;*/
+	height:50px;
+}
+
+#box2 #alertInfo .footer a.input
+{
+    padding:3px 10px;
+    color:#FFF;
+    border-radius:3px;
+    float:right;
+    margin-right:5px;
+    display:block;
+    cursor:pointer;
+    font-size:11px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/***** box2 *****/
+
+.clear
+{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 1px;
+}
+*+html .clear{
+    min-height: 1%;
+}
+
+/* float clearing for IE6 */
+* html .clearfix{
+    height: 1%;
+    overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+    min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+}
+
+/* Gradient BG */
+.gra_blue
+{
+    background:#375169;
+    background: -moz-linear-gradient(center top , #375169, #1f2f3e) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#375169), to(#1f2f3e));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#375169', endColorstr='#1f2f3e');
+}
+
+
+/***** popNoitceBox *****/
+#popNoitceBox .window {
+    position:absolute;
+    width:440px;
+    display:none;
+    z-index:9999;
+    padding:1px;
+	font-size:14px;
+    /*background:#000000;*/
+}
+/* Customize your modal window here, you can add background image too */
+#popNoitceBox #popNoitceAlertInfo {
+    width:655px;
+    /*background:#09C;
+    background: url(../images/popup_bg.png);*/
+    border-radius:5px;
+    background:#fff;
+}
+
+#popNoitceBox #popNoitceAlertInfo .header
+{
+    padding:10px;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+}
+
+#popNoitceBox #popNoitceAlertInfo .content
+{
+    background:#FFF;
+    padding:10px 10px 10px 10px;
+    min-height:250px;
+/*    text-align:center;*/
+    color:#333;
+}
+
+#popNoitceBox #popNoitceAlertInfo .contenttext
+{
+    font-size:12px; 
+	color:#000000; 
+/*	font-family:Arial,Verdana,MS Sans Serif; */
+	background-color:#FFFFFF; 
+	padding:5px 15px 5px 15px; 
+	border:1px solid #A0A0A0; 
+	width:600px; 
+	height:256px; 
+	overflow:auto;
+}
+
+#popNoitceBox #popNoitceAlertInfo .footer
+{
+    padding: 0 8px 8px 8px;
+    color:#ffffff;
+    /*background:#eeeeee;
+    border-top:1px solid #dddddd;*/
+	height:50px;
+}
+
+#popNoitceBox #popNoitceAlertInfo .footer a.input
+{
+    padding:3px 10px;
+    color:#FFF;
+    border-radius:3px;
+    float:right;
+    margin-right:5px;
+    display:block;
+    cursor:pointer;
+    font-size:11px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/***** popNoitceBox *****/
+
+/***** quickCardErrorBox *****/
+#quickCardErrorBox .window {
+    position:absolute;
+    width:440px;
+    display:none;
+    z-index:9999;
+    padding:1px;
+    /*background:#000000;*/
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#quickCardErrorBox #quickCardErrorAlertInfo {
+    width:375px;
+    /*background:#09C;
+    background: url(../images/popup_bg.png);*/
+    border-radius:5px;
+    background:#fff;
+}
+
+#quickCardErrorBox #quickCardErrorAlertInfo .header
+{
+    padding:10px;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+}
+
+#quickCardErrorBox #quickCardErrorAlertInfo .content
+{
+    background:#FFF;
+    padding:15px 10px 15px 10px;
+    min-height:50px;
+    text-align:center;
+    color:#333;
+}
+
+#quickCardErrorBox #quickCardErrorAlertInfo .footer
+{
+    padding:8px;
+    color:#ffffff;
+    background:#eeeeee;
+    border-top:1px solid #dddddd;
+}
+
+#quickCardErrorBox #quickCardErrorAlertInfo .footer a.input
+{
+    padding:3px 10px;
+    color:#FFF;
+    border-radius:3px;
+    float:right;
+    margin-right:5px;
+    display:block;
+    cursor:pointer;
+    font-size:11px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/***** quickCardErrorBox *****/
+
+
+/***** shippingCastBox *****/
+#shippingCastBox .window {
+    position:absolute;
+    width:440px;
+    display:none;
+    z-index:9999;
+    padding:1px;
+    /*background:#000000;*/
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#shippingCastBox #shippingCastBoxAlertInfo {
+    width:375px;
+    /*background:#09C;
+    background: url(../images/popup_bg.png);*/
+    border-radius:5px;
+    background:#fff;
+}
+
+#shippingCastBox #shippingCastBoxAlertInfo .header
+{
+    padding:10px;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+}
+
+#shippingCastBox #shippingCastBoxAlertInfo .content
+{
+    background:#FFF;
+    padding:15px 10px 15px 10px;
+    min-height:50px;
+    text-align:center;
+    color:#333;
+}
+
+#shippingCastBox #shippingCastBoxAlertInfo .footer
+{
+    padding:8px;
+    color:#ffffff;
+    background:#eeeeee;
+    border-top:1px solid #dddddd;
+}
+
+#shippingCastBox #shippingCastBoxAlertInfo .footer a.input
+{
+    padding:3px 10px;
+    color:#FFF;
+    border-radius:3px;
+    float:right;
+    margin-right:5px;
+    display:block;
+    cursor:pointer;
+    font-size:11px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/***** shippingCastBox *****/
+
+/***** DNA pop-up window ***/
+
+#dna .window {
+    position:absolute;
+    width:440px;
+    display:none;
+    z-index:9999;
+    padding:1px;
+    /*background:#000000;*/
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#dna #dna_conf {
+    width:375px;
+    /*background:#09C;
+    background: url(../images/popup_bg.png);*/
+    border-radius:5px;
+    background:#fff;
+}
+
+#dna #dna_conf .header
+{
+    padding:10px;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+}
+
+#dna #dna_conf .content
+{
+    background:#FFF;
+    padding:15px 10px 15px 10px;
+    min-height:50px;
+    text-align:center;
+    color:#333;
+}
+
+#dna #dna_conf .footer
+{
+    padding:8px;
+    color:#ffffff;
+    background:#eeeeee;
+    border-top:1px solid #dddddd;
+}
+
+#dna #dna_conf .footer a.input
+{
+    padding:3px 10px;
+    color:#FFF;
+    border-radius:3px;
+    float:right;
+    margin-right:5px;
+    display:block;
+    cursor:pointer;
+    font-size:11px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#dna2 .window {
+    position:absolute;
+    width:440px;
+    display:none;
+    z-index:9999;
+    padding:1px;
+	font-size:14px;
+    /*background:#000000;*/
+}
+/* Customize your modal window here, you can add background image too */
+#dna2 #dna2_alertInfo {
+    width:655px;
+    /*background:#09C;
+    background: url(../images/popup_bg.png);*/
+    border-radius:5px;
+    background:#fff;
+}
+
+#dna2 #dna2_alertInfo .header
+{
+    padding:10px;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+}
+
+#dna2 #dna2_alertInfo .content
+{
+    background:#FFF;
+    padding:10px 10px 10px 10px;
+    min-height:250px;
+/*    text-align:center;*/
+    color:#333;
+}
+
+#dna2 #dna2_alertInfo .contenttext
+{
+    font-size:12px; 
+	color:#000000; 
+/*	font-family:Arial,Verdana,MS Sans Serif; */
+	background-color:#FFFFFF; 
+	padding:5px 15px 5px 15px; 
+	border:1px solid #A0A0A0; 
+	width:600px; 
+	height:256px; 
+	overflow:auto;
+}
+
+#dna2 #dna2_alertInfo .footer
+{
+    padding: 0 8px 8px 8px;
+    color:#ffffff;
+    /*background:#eeeeee;
+    border-top:1px solid #dddddd;*/
+	height:50px;
+}
+
+#dna2 #dna2_alertInfo .footer a.input
+{
+    padding:3px 10px;
+    color:#FFF;
+    border-radius:3px;
+    float:right;
+    margin-right:5px;
+    display:block;
+    cursor:pointer;
+    font-size:11px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}

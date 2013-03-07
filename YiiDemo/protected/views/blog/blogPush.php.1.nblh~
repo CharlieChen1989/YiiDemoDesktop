@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="站长,网页特效,网页特效代码,js特效,js脚本,脚本,广告代码,zzjs,zzjs.net,www.zzjs.net,站长特效 网" />
+<meta name="description" content="www.zzjs.net,站长特效网，站长必备js特效及广告代码。大量高质量js特效，提供高质量广告代码下载,尽在站长特效网" />
+<title>网页特效 模拟3D旋转 站长特效网欢迎您。</title>
+<style type="text/css">
+ * { font-size:12px; font-weight:normal; font-family:Arial; padding:0px; margin:0px; }
+ body { border-style:none; overflow:hidden; background-color:black; /*#3A6EA5;*/ padding:0px; margin:0px; }
+ .chr { position:absolute; }
+ .block { position:absolute; text-align:center; font-size:20px; font-weight:bold; }
+ #out { position:absolute; right:0px; top:0px; font-size:30px; height:30px; line-height:30px; padding:0px 20px; color:white; }
+</style>
+</head>
+<body>
+<script language="javascript">
+var glbObj, sIndex;
+var x0, y0, z0, d0, r0;
+var step = 0.02;
+var frames_count = 0;
+function move(x, y, z){
+ var k, x, y, d, c;
+ this.x = x;
+ this.y = y;
+ this.z = z;
+ k = (z0-z) / z0;
+ c = parseInt(k*160).toString(16);
+ if(c.length<2)c = "0"+c;
+ this.style.fontSize = d0 * k;
+ this.style.left = x * k + x0;
+ this.style.top = y * k + y0;
+ this.style.color = c + c + c;
+ this.style.zIndex = z0 - z;
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+function createString(str){
+ var obj, chr;
+ obj = document.createElement("div");
+ for(var i=0; i<str.length; i++){
+  chr = document.createElement("div");
+  chr.move = move;
+  chr.style.position = "absolute";
+  chr.innerText = str.charAt(i);
+  obj.appendChild(chr);
+ }
+ return(obj);
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+window.onload = function(){
+ var obj;
+ x0 = window.document.body.clientWidth / 2;
+ y0 = window.document.body.clientHeight / 2;
+ z0 = 600;
+ d0 = 30;
+ r0 = 100;
+ obj = createString((new Array(500)).join(unescape("%u2022")));
+ document.body.appendChild(obj);
+ for(var i=0; i<obj.childNodes.length; i++){
+  obj.childNodes[i].move(Math.cos(i/4.5)*r0,i,Math.sin(i/4.5)*r0);
+ }
+ glbObj = obj;
+ setTimeout(rotate);
+ setInterval(out_put, 1000);
+ ymouse = y0-90;
+ xmouse = x0;
+}
+function rotate(){
+ var chr, angle, r;
+ for(var i=0; i<glbObj.childNodes.length; i++){
+  chr = glbObj.childNodes[i];
+  angle = Math.atan(chr.z/chr.x)+(chr.x<0?Math.PI:0) + step;
+  //r = Math.sqrt(chr.x*chr.x + chr.z*chr.z);
+  chr.move(Math.cos(angle)*r0,chr.y,Math.sin(angle)*r0);
+ }
+ frames_count++;
+ setTimeout(rotate);
+}
+function out_put(){
+ document.getElementById("out").innerHTML = "刷新率：" + frames_count + " 帧/秒";
+ frames_count = 0;
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+</script>
+<div id="out"></div>
+</body>
+</html>

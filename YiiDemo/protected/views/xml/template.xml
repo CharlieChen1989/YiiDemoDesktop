@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmlInterchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1" xmlns="http://www.kleo-backoffice.com/EnterpriseService/">			
+    <function_name>placement</function_name>				
+    <operate>ADD</operate>				
+    <txn_seqno>PLAADD01212031254121</txn_seqno>
+    <txn_time>2012-12-01 00:12:13</txn_time> 	
+    <placement>
+        <placement_results>
+            <placement_result>
+                <vendor_sponsorID>20000211</vendor_sponsorID>	
+                <vendor_parentID>20000510</vendor_parentID>	
+                <vendor_memberID>22999292</vendor_memberID>
+                <memberID>200081212</memberID>
+                <sponsorID>20000008</sponsorID>	
+                <parentID>3020202002</parentID>
+                <position>1</position>
+                <return_code>1</return_code>				
+                <return_message>placement successfully</return_message>
+            </placement_result>
+            <placement_result>
+                <vendor_sponsorID>20000211</vendor_sponsorID>	
+                <vendor_parentID>20000510</vendor_parentID>	
+                <vendor_memberID>22999292</vendor_memberID>
+                <memberID>200081212</memberID>
+                <sponsorID>20000008</sponsorID>	
+                <parentID>3020202002</parentID>
+                <position>0</position>
+                <return_code>0</return_code>				
+                <return_message>placement failed</return_message>
+            </placement_result>
+        </placement_results>
+    </placement>
+</xmlInterchange>

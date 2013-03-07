@@ -1,0 +1,34 @@
+/* 
+    Document   : rightClick
+    Created on : 2013-1-14, 16:18:27
+    Author     : wh1207024
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.title {
+    float: left;
+    }
+.ChildNode {
+    background-image: url(/images/drive.png);
+    background-position: 15px -58px;
+    padding-left: 39px;
+    line-height: 21px;
+    background-repeat: no-repeat;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-style: dashed;
+    border-right-style: dashed;
+    border-bottom-style: dashed;
+    border-left-style: dashed;
+    border-top-color: #aabdce;
+    border-right-color: #aabdce;
+    border-bottom-color: #aabdce;
+    border-left-color: #aabdce;
+    cursor: default;
+    clear: both;
+    height: 21px;
+    color: #314f6a;
+}
+

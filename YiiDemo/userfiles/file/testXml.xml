@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<note>
+<to>George</to>
+<from>John</from>
+<heading>Reminder</heading>
+<body>Don't forget the meeting!</body>
+</note>
+
+<?xml version="1.0" encoding="utf-8"?>
+<xmlInterchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1" xmlns="http://www.kleo-backoffice.com/EnterpriseService/">			
+    <function_name>placement</function_name>				
+    <operate>ADD</operate>				
+    <txn_seqno>PLAADD01212031254121</txn_seqno>
+    <txn_time>2012-12-01 00:12:13</txn_time>	  			
+    <return_code>1</return_code>				
+    <return_message>placement successfully</return_message>							
+    <placements>
+        <placement>			
+            <membershipNo>1142709350</membershipNo>
+            <sponsor_membershipNo>1113305664</sponsor_membershipNo>				
+            <parent_membershipNo>1114474487</parent_membershipNo>				
+            <position>1</position>							
+        </placement>
+        <placement>			
+            <membershipNo>1141955566</membershipNo>
+            <sponsor_membershipNo>1179580688</sponsor_membershipNo>				
+            <parent_membershipNo>1194628906</parent_membershipNo>				
+            <position>0</position>							
+        </placement>
+    </placements>
+</xmlInterchange>
